@@ -1,0 +1,27 @@
+form{
+	background-color: #0BE5CB;
+	text-align: center;
+	margin: 0 20% 10px 20%;
+	padding: 20px 10px 20px 10px;
+	
+}
+body{
+	overflow-y: scroll;
+	background-image: url("images/book.jpg");
+	background-color: transparent;
+}
+/*h1, h4{
+	text-align: center;
+	color: black;
+}*/
+header{
+	background-color: #D2E1E0;
+	
+}
+#mu-footer{
+	background-color: white;
+}
+#mu-social-media{
+	position: relative;
+	right: 0;
+}
