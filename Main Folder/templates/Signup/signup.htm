@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Sign Up</title>
+		<link href="{{url_for('static',filename='signup.css')}}" type = 'text/css' rel='stylesheet'>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<nav class=" navbar">
+				<div class="nav navbar-left">
+					<img src="{{url_for('static',filename='tts.png')}}">
+					<h3>AudiBee</h3>
+				</div>
+				<div class="justify-content-end">
+				<ul class="nav navbar-right">
+					<a href="/Home/home.html"><li>Home</li></a>&nbsp;&nbsp;&nbsp;
+					<a href="/About/about.html"><li>About</li></a>&nbsp;&nbsp;&nbsp;
+					<a href="/Contact/contact.html"><li>Contact</li></a>&nbsp;&nbsp;&nbsp;
+					<a href="/Login/login.html"><li>Login</li></a>
+				</ul>
+				</div>
+			</nav>
+			<h1 style="text-align:center;text-decoration:underline">Welcome to AudiBee</h1>
+			<h4 style="text-align:center;"><i>Sign Up and Start Listening!</i></h4><br>
+		</header>
+		<br>
+		<form action="">
+			<div class='form-row'>
+				<div class="col">
+					<label for="exampleFirstName">First Name</label>
+					<input type="textarea" class="form-control" size="15" id="exampleFirstName" aria-label: 'Large' aria-describedby="fnameHelp" placeholder="First Name" required>
+				</div>
+				<br>
+				<div class="col">
+					<label for="exampleLastName">Last Name</label>
+					<input type="textarea" class="form-control" size="15" id="exampleLastName" aria-label: 'Large' aria-describedby="lnameHelp" placeholder="Last Name" required>
+				</div>
+			</div>
+			<br>
+			<div class="col">
+				<label for="exampleInputEmail1">Email address</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" aria-label: 'Large' aria-describedby="emailHelp" placeholder="Enter email" required>
+			</div>
+			<br>
+			<div class="col">
+				<label for="exampleInputPassword1">Password</label>
+				<input type="password" class="form-control" aria-label: 'Default' minlength="8" id="exampleInputPassword1" placeholder="Password: minimum 8 characters" required>
+			</div>
+			<br>
+			<div class="col">
+				<label for="examplePhoneNumber">Phone Number</label>
+				<input type="textarea" class="form-control" aria-label: 'Default' size="10" id="examplePhoneNumber" placeholder="Enter Phone number" required>
+			</div>
+			<br>
+			<button type="submit" class="btn btn-primary">Sign Up!</button>
+		</form>
+		<br>
+		<footer>
+			<div id="foot">
+				<h4 style="text-align: center;">Join the Conversation</h4>
+			</div>
+			<div class="text-center">
+				<a href="https://www.facebook.com"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+				<a href="https://twitter.com"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+				<a href="https://www.youtube.com"><i id="social-yt" class="fa fa-youtube-square fa-3x social"></i></a>
+				<a href="mailto:xyz@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+			</div>
+		</footer>
+	</body>
+</html>

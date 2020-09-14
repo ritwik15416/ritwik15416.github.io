@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+    <title>Audi Bee</title>
+
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- for image and title -->
+        <a class="navbar-brand" href="#">
+            <img src="{{url_for('static',filename='tts.png')}}" width="30" height="30" class="d-inline-block align-top" alt="">
+            Audi Bee
+        </a>
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- justify-content-end for sending navbar items to right -->
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+            <ul class="nav navbar-nav navbar-right">
+
+                <!-- p + text-success is for colour on text -->
+
+                <li class="nav-item active">
+                    <p><a class="nav-link " href="/About/about.html">About <span class="sr-only">(current) </span>
+                        </a>
+                    </p>
+                </li>
+
+                <li class="nav-item active">
+                    <p><a class="nav-link " href="/Contact/contact.html">Contact</a><span class="sr-only">(current)
+                            </span>
+                        </a>
+                    </p>
+                </li>
+
+                <li class="nav-item active">
+                    <p><a class="nav-link " href="/Signup/signup.htm">Signup <span class="sr-only">(current) </span>
+                        </a></p>
+                </li>
+
+                <li class="nav-item active">
+                    <p><a class="nav-link " href="/Login/login.html">Login <span class="sr-only">(current) </span>
+                        </a></p>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- created a form with row and col so input box take half size -->
+    <!-- set ml-4 and mr-4 and my -6 it will set margind in row and columns -->
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <div class="form-group purple-border ml-5 mt-3">
+                    <label for="exampleFormControlTextarea4">Write text below to convert to speech</label>
+                    <textarea class="form-control " id="exampleFormControlTextarea4" rows="7" size="50" placeholder=" Only 25 words are free 
+                        To convert more words please Signup"></textarea>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div class="row">
+        <div class="col-lg-10">
+            <!-- <h3 class="one">Text</h3> -->
+            <a href="#" button class="btn btn-dark float-right">Listen Now
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-10">
+            <a href="#" button class="btn btn-dark float-right">Download MP3
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <!-- <div class="row">
+        <div class="col-lg-7">
+            <a class="btn btn-dark float-right btn-lg mb-5 mt-5" href="#" role="button" button type="button"
+                class="">Upload File</a>
+        </div>
+    </div> -->
+    <a button type="button" class="btn btn-dark btn-lg mb-5 ml-4" href=" #" role="button">Upload File</button></a>
+
+
+    <!-- Footer -->
+    <footer class="page-footer bg-dark">
+        <div class="bg-success">
+            <div class="container">
+                <div class="row py-4 d-flex align-items-center">
+                    <div class="col-md-12 text-center">
+                        <a href="#"><i class="fab fa-facebook-f text-white mr-4"> </i></a>
+                        <a href="#"><i class="fab fa-twitter text-white mr-4"> </i></a>
+                        <a href="#"><i class="fab fa-google-plus-g text-white mr-4"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white mr-4"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white "></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+</body>
+
+</html>
