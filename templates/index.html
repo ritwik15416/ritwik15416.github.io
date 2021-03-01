@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  Text to Speech
+</h1>
+
+
+
+<form>
+  <div>
+      <div >
+          <div >
+              <label for="exampleFormControlTextarea4">Write text below to convert to speech</label>
+              <textarea class="form-control " id="exampleFormControlTextarea4" rows="7" placeholder=""></textarea>
+          </div>
+      </div>
+  </div>
+</form>
+<br>
+<div class="row">
+  <div class="col">
+      <!-- <h3 class="one">Text</h3> -->
+      <button class="btn btn-dark  " id='play123'>Play
+          </button>
+      </a>
+  </div>
+</div>
+
+</div>
+<script  type="text/javascript" src="{{url_for('static',filename='js/script.js')}}">
+</script>
+
+{% endblock %}
