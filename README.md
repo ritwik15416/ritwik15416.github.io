@@ -5,6 +5,6 @@ A simple free text to speech converting web app, developed using Flask web frame
 
 # Team
 Ritwik Jha (team lead), 
-Rahul Yadav, 
-Sandeep Soni, 
-Ashutosh Bhardwaj
+Rahul Yadav (back-end developer), 
+Sandeep Soni (front-end developer), 
+Ashutosh Bhardwaj (tester)
