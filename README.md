@@ -1,7 +1,7 @@
 # Text to Speech 
 ### Flask Web App
 
-A simple text to speech converting web app, developed using HTML, JS, CSS & Flask.
+A text to speech converting web app, developed using HTML, JS, CSS & Flask.
 
 # Team
 Ritwik Jha (team lead), 
